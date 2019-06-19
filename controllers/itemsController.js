@@ -7,8 +7,8 @@ const { sanitizeBody } = require('express-validator/filter');
 const mongoDB = 'mongodb+srv://dragon-straight:8910JQKA@cluster0-dqpzz.mongodb.net/e-commerce';
 const mongoose = require('mongoose');
 const async = require('async');
-//const multer = require('multer');
-//const upload = multer({dest: '../public/img/'});
+const multer = require('multer');
+const upload = multer({dest: '../public/img/'});
 
 exports.item_list = async function(req,res) {
     const name = req.user.info.name;
@@ -22,7 +22,7 @@ exports.item_list = async function(req,res) {
     const pageStart = page;
     const prev=page-1 >0?page-1:1;
     const next=page+1;
-    const limit = 2;
+    const limit = 5;
     const offset = (page - 1) * limit;
 
     const list= await Product.find({isDeleted: false}).limit(limit).skip(offset)
@@ -64,7 +64,7 @@ exports.item_add_get = async function(req,res,next) {
 
 exports.item_add_post = function(req,res,next){
     //res.send(req.files[0].originalname);
-    /*mongoose.connect(mongoDB, function(error){
+    mongoose.connect(mongoDB, function(error){
         if(error)
             throw error;
         let product = new Product({
@@ -84,8 +84,7 @@ exports.item_add_post = function(req,res,next){
             if(error) throw error;
             res.redirect('list');
         });
-    });*/
-    res.redirect('list');
+    });
 };
 
 exports.item_update_get = async function(req,res) {
@@ -102,7 +101,7 @@ exports.item_update_get = async function(req,res) {
 };
 
 exports.item_update_post = function(req,res,next) {
-    /*mongoose.connect(mongoDB, function(error){
+    mongoose.connect(mongoDB, function(error){
         if(error)
             throw error;
         var id = mongoose.Types.ObjectId(req.params.id);
@@ -131,8 +130,7 @@ exports.item_update_post = function(req,res,next) {
                 }
             }
         })
-    });*/
-    res.redirect('../list');
+    });
 };
 
 exports.item_delete = function(req,res){

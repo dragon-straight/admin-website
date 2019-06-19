@@ -16,7 +16,7 @@ exports.order_list= async function(req,res)
     const pageStart = page;
     const prev=page-1 >0?page-1:1;
     const next=page+1;
-    const limit = 2;
+    const limit = 5;
     const offset = (page - 1) * limit;
 
     const orders = await Order.find().limit(limit).skip(offset).sort({created:-1});
@@ -64,7 +64,7 @@ exports.order_update_post = async function(req, res){
   if(orderInfo == null)
       res.status(404).send();
 
-  orderInfo.totalPrice = req.body.totalPrice;
+  orderInfo.cart.totalPrice = req.body.totalPrice;
   orderInfo.status = req.body.status;
   orderInfo.payment = req.body.payment;
 
