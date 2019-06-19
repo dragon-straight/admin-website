@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36731989-4fac-4d4f-8e86-0c3ae03ede6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/controllers/itemsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/itemsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/catalog.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -61,20 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/itemsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="153">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/catalog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+            <state relative-caret-position="-712">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -103,6 +104,7 @@
       <find>product</find>
       <find>login</find>
       <find>check</find>
+      <find>add</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,7 +153,6 @@
         <option value="$PROJECT_DIR$/views/partials/pagination.hbs" />
         <option value="$PROJECT_DIR$/controllers/ordersController.js" />
         <option value="$PROJECT_DIR$/views/users/list.hbs" />
-        <option value="$PROJECT_DIR$/controllers/itemsController.js" />
         <option value="$PROJECT_DIR$/controllers/usersController.js" />
         <option value="$PROJECT_DIR$/handlebarsHelper.js" />
         <option value="$PROJECT_DIR$/views/orders/list.hbs" />
@@ -162,6 +163,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/catalog.js" />
+        <option value="$PROJECT_DIR$/controllers/itemsController.js" />
       </list>
     </option>
   </component>
@@ -398,12 +400,12 @@
       <workItem from="1560929179812" duration="1375000" />
       <workItem from="1560935118498" duration="12000" />
       <workItem from="1560935240037" duration="9000" />
-      <workItem from="1560946386764" duration="2185000" />
+      <workItem from="1560946386764" duration="3363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267574000" />
+    <option name="totallyTimeSpent" value="268752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -755,17 +757,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/itemsController.js">
+    <entry file="file://$PROJECT_DIR$/routes/catalog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="-712">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/catalog.js">
+    <entry file="file://$PROJECT_DIR$/controllers/itemsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
