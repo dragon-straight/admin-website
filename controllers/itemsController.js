@@ -7,8 +7,6 @@ const { sanitizeBody } = require('express-validator/filter');
 const mongoDB = 'mongodb+srv://dragon-straight:8910JQKA@cluster0-dqpzz.mongodb.net/e-commerce';
 const mongoose = require('mongoose');
 const async = require('async');
-const multer = require('multer');
-const upload = multer({dest: '../public/img/'});
 
 exports.item_list = async function(req,res) {
     const name = req.user.info.name;
